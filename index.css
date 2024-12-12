@@ -1,7 +1,112 @@
-/*CSS Reset*/
+/* CSS Reset */
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 } 
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    background-color: #fffbf5; 
+    color: #252827; 
+}
+
+.category-card {
+    flex: 1 1 calc(33% - 20px); 
+    background-color: #ffffff; 
+    border: 1px solid #de6c3d; 
+}
+
+.navbar {
+    margin-bottom: 20px; 
+    background-color: #de6c3d; 
+}
+
+.navbar-brand, .nav-link {
+    color: #fffbf5 !important; 
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #de6c3d !important; 
+}
+
+.footer {
+    margin-top: auto;
+    padding-bottom: 20px;
+    background-color: #252827; 
+    color: white; 
+    font-size: 10px;
+}
+
+/* Featured Section Styles */
+#featuredCarousel .carousel-item h5 a {
+    color: #591f1f;
+}
+
+#featuredCarousel .carousel-item img {
+    max-width: 100%;
+}
+
+/* Override Bootstrap button styles if needed */
+.btn-outline-light {
+    border-color: #de6c3d;
+    color: #fffbf5;
+}
+
+.btn-outline-light:hover {
+    background-color: #de6c3d;
+    color: #252827;
+}
+
+#submit{
+    background-color: #de6c3d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .category-card {
+       flex: 1 1 calc(50% - 20px); 
+   }
+}
+
+@media (max-width: 576px) {
+   .category-card {
+       flex: 1 1 calc(100% - 20px); 
+   }
+}
+
+/* Zoom-in effect on category cards */
+.category-card:hover {
+    transform: scale(1.05); 
+}
+
+/* Image styles for category cards */
+.card-img-top {
+    height: 200px; 
+    object-fit: cover;
+}
+
+.category-card{
+    width: 18rem;
+}
+
+.category-card img {
+    height: 200px; 
+    object-fit: cover;
+}
+
+/* Map */
+.map-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; 
+    position: relative;
+}
+
+.map-responsive iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
